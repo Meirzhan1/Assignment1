@@ -11,6 +11,7 @@ class Student extends Person {
     public void addGrade(int grade) {
         grades.add(grade);
     }
+
     public double calculateGPA() {
         if (grades.isEmpty()) {
             return 0.0;

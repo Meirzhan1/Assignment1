@@ -16,4 +16,9 @@ class Person {
         String genderStr = gender ? "Male" : "Female";
         return "Hi, I am " + name + " " + surname + ", a " + age + "-year-old " + genderStr + ".";
     }
+
+    public String getSurname() {
+        return surname;
+    }
+
 }
