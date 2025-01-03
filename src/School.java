@@ -1,20 +1,15 @@
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 class School {
-    public List<Person> members;
+    private List<Person> members;
 
     public School() {
         members = new ArrayList<>();
     }
 
-    public void addMember(Person member) {
-        members.add(member);
-    }
-
-    public List<Person> getMembers() {
-        return members;
+    public void addMember(Person person) {
+        members.add(person);
     }
 
     @Override

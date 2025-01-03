@@ -44,14 +44,11 @@ public class Main {
                 }
                 school.addMember(teacher);
             }
-            school.getMembers().sort((p1, p2) -> p1.getSurname().compareToIgnoreCase(p2.getSurname()));
-            System.out.println("Sorted by Surname:");
-            for (Person member : school.getMembers()) {
-                        System.out.println(member);
-            }
 
-        }
-        catch (IOException e) {
+            System.out.println("Task 3: Class Relationships");
+            System.out.println(school);
+
+        } catch (IOException e) {
             System.err.println("Error reading files: " + e.getMessage());
         }
     }
